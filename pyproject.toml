@@ -1,0 +1,28 @@
+[project]
+name = "filerize"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11, <3.13"
+license = "MIT"
+dependencies = [
+  "pyside6>=6.11.1",
+]
+
+[dependency-groups]
+dev = [
+  "mypy>=2.1.0",
+  "pytest>=9.0.3",
+  "ruff>=0.15.15",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.mypy]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
